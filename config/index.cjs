@@ -6,12 +6,14 @@
  * 自行添加属性，以支持更多个性化功能
  */
 const USER_CONFIG = {
+  // 请将以下代码按照图示粘贴到对应位置
+  USE_PASSAGE: 'push-plus',
 
   // 使用微信测试号：公众号APP_ID
-  APP_ID: 'wx1da028a78bb64819',
+  APP_ID: '',
 
   // 使用微信测试号：公众号APP_SECRET
-  APP_SECRET: 'a19c65829ed0b3569aea7eb7a29a40cb',
+  APP_SECRET: '',
 
   PROVINCE: '浙江',
   CITY: '温州',
@@ -21,16 +23,16 @@ const USER_CONFIG = {
       // 想要发送的人的名字
       name: '宝贝',
       // 使用微信测试号：扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
-      id: 'op3uV6kOCy3N7M3KfuNdPpAPqPtI',
+      id: '94c4d6da837c4def8b0da384cbe6e28c',
       // 使用微信测试号：你想对他发送的模板消息的模板ID
-      useTemplateId: 'BNxH7ukIWuA-r74bKBCswXB8rSQiqmQY-I7diIi3ucc',
+      useTemplateId: '001',
       // 新历生日, 仅用作获取星座运势, 格式必须为MM-DD
       horoscopeDate: '10-1',
       festivals: [
         // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
-        {
-          type: '*生日', name: '宝宝', year: '2003', date: '10-01',
-        },
+        // {
+        //   type: '*生日', name: '', year: '2003', date: '10-01',
+        // },
         // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
         {
           type: '生日', name: '宝宝', year: '2003', date: '10-01',
@@ -44,7 +46,7 @@ const USER_CONFIG = {
         // 在一起的日子
         { keyword: 'love_day', date: '2023-03-31' },
         // 结婚纪念日
-        { keyword: 'marry_day', date: '2023-03-31' },
+        // { keyword: 'marry_day', date: '2023-03-31' },
       ],
     },
   ],
